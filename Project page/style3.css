@@ -1,0 +1,91 @@
+@import url(style2.css);
+
+
+.poster {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(to right, #09134c8c, rgba(0, 0, 0, 0)), url('street.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+    color: var(--font-color-3);
+}
+
+.Desc-Poster .f-1 p:nth-child(1) {
+    color: var(--font-color-3);
+    background-color: #070d315e;
+    width: fit-content;
+    
+}
+
+/* ----------- */
+
+.work{
+    background-color: var(--primary-3);
+}
+
+.work h6::before {
+    content: "|";
+    margin-right: 10px;
+  color: var(--primary);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.About-Us .img-4{
+
+    background-color: var(--primary-3);
+}
+
+.info-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.info-section i {
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    color: var(--font-color-2);
+}
+
+/* ------------------- */
+
+.why-us-end h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.why-us-end .col-3 {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.why-us-end .col-3:hover {
+    transform: translateY(-5px);
+}
+
+.why-us-end hr{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .why-us-end hr{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+    .why-us-end hr{
+        display: block;
+    }
+}

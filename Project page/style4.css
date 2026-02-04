@@ -1,0 +1,70 @@
+@import url(style2.css);
+
+body {
+    height: auto;
+}
+
+.poster {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(to right, #09134c8c, rgba(0, 0, 0, 0)), url('plane.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fadeIn 2s ease-in-out;
+    color: var(--font-color-3);
+}
+
+.Desc-Poster .f-1 p:nth-child(1) {
+    color: var(--font-color-3);
+    background-color: #070d315e;
+    width: fit-content;
+    
+}
+
+.why-us-end hr{
+    display: none;
+}
+
+/* ------------------ */
+
+.collection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+  .collection img {
+    max-width: 400px;
+    height: 353px;
+    transition: transform 0.3s ease;
+  }
+  
+  .collection img:hover {
+    transform: scale(1.05);
+  }
+
+@media (max-width: 768px) {
+
+    .collection {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .why-us-end hr{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 990px) {
+
+    .collection img {
+        max-width: 300px;
+      }
+
+    .why-us-end hr{
+        display: block;
+    }
+}
